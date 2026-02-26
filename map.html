@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1645125d3644d6eb81291994051a2a56 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1645125d3644d6eb81291994051a2a56" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1645125d3644d6eb81291994051a2a56 = L.map(
+                "map_1645125d3644d6eb81291994051a2a56",
+                {
+                    center: [40.733000000000004, -73.993],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fb52e9423c6f152ffadf0b3ff80de9b2 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1645125d3644d6eb81291994051a2a56);
+        
+    
+            var marker_e4dee657fb799422623011d57b32b76d = L.marker(
+                [40.713, -74.007],
+                {}
+            ).addTo(map_1645125d3644d6eb81291994051a2a56);
+        
+    
+            var icon_35d720275a3262aa4116dbe4ad8d20d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-up", "iconColor": "white", "markerColor": "darkgreen", "prefix": "fa"}
+            );
+            marker_e4dee657fb799422623011d57b32b76d.setIcon(icon_35d720275a3262aa4116dbe4ad8d20d5);
+        
+    
+        var popup_c6decb2154a665cd32a6a3e54136dca8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c0bc2804b108accbb7cb9a04f2856903 = $(`<div id="html_c0bc2804b108accbb7cb9a04f2856903" style="width: 100.0%; height: 100.0%;">         <b>Downtown</b><br>         Price: $480,000<br>         Price/SqFt: $600.00<br>         30-Day Growth: 6.67%         </div>`)[0];
+                popup_c6decb2154a665cd32a6a3e54136dca8.setContent(html_c0bc2804b108accbb7cb9a04f2856903);
+            
+        
+
+        marker_e4dee657fb799422623011d57b32b76d.bindPopup(popup_c6decb2154a665cd32a6a3e54136dca8)
+        ;
+
+        
+    
+    
+            marker_e4dee657fb799422623011d57b32b76d.bindTooltip(
+                `<div>
+                     Downtown Listing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25b7e8bf86a6007175732998eef5f7aa = L.marker(
+                [40.731, -73.987],
+                {}
+            ).addTo(map_1645125d3644d6eb81291994051a2a56);
+        
+    
+            var icon_99705f7c7c744dea0e12e5a5283a82bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-down", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_25b7e8bf86a6007175732998eef5f7aa.setIcon(icon_99705f7c7c744dea0e12e5a5283a82bf);
+        
+    
+        var popup_3613d5bb458fca8935faab014c3d711f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d1014bce7f4a0d4fca090d6aaaf951e2 = $(`<div id="html_d1014bce7f4a0d4fca090d6aaaf951e2" style="width: 100.0%; height: 100.0%;">         <b>Uptown</b><br>         Price: $840,000<br>         Price/SqFt: $700.00<br>         30-Day Growth: -1.18%         </div>`)[0];
+                popup_3613d5bb458fca8935faab014c3d711f.setContent(html_d1014bce7f4a0d4fca090d6aaaf951e2);
+            
+        
+
+        marker_25b7e8bf86a6007175732998eef5f7aa.bindPopup(popup_3613d5bb458fca8935faab014c3d711f)
+        ;
+
+        
+    
+    
+            marker_25b7e8bf86a6007175732998eef5f7aa.bindTooltip(
+                `<div>
+                     Uptown Listing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d669aaa1f762ffb606dbfa5dfb25c92 = L.marker(
+                [40.755, -73.985],
+                {}
+            ).addTo(map_1645125d3644d6eb81291994051a2a56);
+        
+    
+            var icon_24c57e816796d596a68ae52043f12493 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-up", "iconColor": "white", "markerColor": "darkgreen", "prefix": "fa"}
+            );
+            marker_7d669aaa1f762ffb606dbfa5dfb25c92.setIcon(icon_24c57e816796d596a68ae52043f12493);
+        
+    
+        var popup_a9efe9c5b7caad3e9b5500ee0f70ca8f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_228ab3f9f6b60aec12f4b95a095433a9 = $(`<div id="html_228ab3f9f6b60aec12f4b95a095433a9" style="width: 100.0%; height: 100.0%;">         <b>Midtown</b><br>         Price: $650,000<br>         Price/SqFt: $684.21<br>         30-Day Growth: 8.33%         </div>`)[0];
+                popup_a9efe9c5b7caad3e9b5500ee0f70ca8f.setContent(html_228ab3f9f6b60aec12f4b95a095433a9);
+            
+        
+
+        marker_7d669aaa1f762ffb606dbfa5dfb25c92.bindPopup(popup_a9efe9c5b7caad3e9b5500ee0f70ca8f)
+        ;
+
+        
+    
+    
+            marker_7d669aaa1f762ffb606dbfa5dfb25c92.bindTooltip(
+                `<div>
+                     Midtown Listing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

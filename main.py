@@ -76,7 +76,7 @@ def analyze_market(df):
 # ==========================================
 # 3. GEOSPATIAL VISUALIZATION (Folium)
 # ==========================================
-def generate_map(df, output_file="market_pulse_map.html"):
+def generate_map(df, output_file="map.html"):
     """
     Plots real estate listings on an interactive map.
     Colors indicate price growth (Green = Growth, Red = Decline).

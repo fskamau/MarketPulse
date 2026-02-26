@@ -5,9 +5,12 @@
 [![Folium](https://img.shields.io/badge/folium-geospatial%20mapping-77B829.svg)](https://python-visualization.github.io/folium/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+### 📍 [**View the Live Interactive Map**](https://fskamau.github.io/MarketPulse/map.html)
+
+
+---
+
 **MarketPulse** is a Python-based geospatial analytics tool designed to scrape real estate rental/sale listings, calculate property valuations, and visualize market momentum. Instead of relying on static charts, this tool utilizes **Folium** to plot coordinates on an interactive HTML map, highlighting neighborhoods experiencing the highest price-per-square-foot growth over a 30-day rolling window.
-
-
 
 ---
 
@@ -23,9 +26,9 @@ Standard web scraping projects often dump data into a CSV or a basic Matplotlib 
 | **Pandas** | Data Engineering | Cleans unstructured data, calculates Price-Per-SqFt, and computes 30-day percentage growth. |
 | **Folium** | Geospatial UI | Translates latitude/longitude coordinates into interactive markers and heatmaps. |
 
-* **Metric Engine:** Automatically standardizes property prices by calculating `$ / sq. ft.`
+* **Metric Engine:** Automatically standardizes property prices by calculating **$ / sq. ft.**
 * **Time-Series Analysis:** Compares current listing batches against 30-day historical data.
-* **Smart Mapping:** Color-codes map markers dynamically based on growth percentages (e.g., green for high appreciation).
+* **Smart Mapping:** Color-codes map markers dynamically based on growth percentages (e.g., green for appreciation, red for decline).
 
 ---
 
@@ -33,8 +36,5 @@ Standard web scraping projects often dump data into a CSV or a basic Matplotlib 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/fskamau/MarketPulse.git
+   git clone [https://github.com/fskamau/MarketPulse.git](https://github.com/fskamau/MarketPulse.git)
    cd MarketPulse
-   pip install -r requirements.txt
-   python main.py
-   ```
